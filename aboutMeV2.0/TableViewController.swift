@@ -42,6 +42,17 @@ class TableViewController: UITableViewController {
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Pass data to detailViewController
+        if segue.identifier == "toDetailView" {
+            if let indexPath = self.tableView.indexPathForSelectedRow {
+                let title = myInfo[indexPath.row]
+                if let destination = segue.destination as? detailViewController
+                {
+            
+                    destination.title = title
+                }
+            }
+            
+        }
     }
 }
 
