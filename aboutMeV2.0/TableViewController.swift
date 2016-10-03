@@ -28,7 +28,10 @@ class TableViewController: UITableViewController {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("myCell", forIndexPath: indexPath) as UITableViewCell
         
-        cell.textLabel!.text = myInfo[0]
+        cell.textLabel!.font = UIFont.systemFontOfSize(15, weight: 5)
+        cell.textLabel!.textColor = UIColor.greenColor()
+        cell.textLabel!.text = myInfo[indexPath.row]
+        
         return cell
     }
     
