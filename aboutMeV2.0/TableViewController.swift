@@ -14,6 +14,7 @@ class TableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "ABOUT ME!"
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -36,7 +37,11 @@ class TableViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        print("hi")
+        performSegueWithIdentifier("toDetailView", sender: nil)
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        // Pass data to detailViewController
     }
 }
 

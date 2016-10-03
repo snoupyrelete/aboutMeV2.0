@@ -5,10 +5,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Detail View Controller-->
         <scene sceneID="Ov5-Cv-mRN">
             <objects>
-                <viewController id="hbT-o4-8y6" sceneMemberID="viewController">
+                <viewController id="hbT-o4-8y6" customClass="detailViewController" customModule="aboutMeV2_0" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="hyH-Ld-vbg"/>
                         <viewControllerLayoutGuide type="bottom" id="R5K-1H-OZP"/>
@@ -16,12 +16,23 @@
                     <view key="view" contentMode="scaleToFill" id="WxP-Ab-A31">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hkk-Kg-dDY">
+                                <rect key="frame" x="74" y="231" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="descriptionLabel" destination="hkk-Kg-dDY" id="SNE-kI-EV5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Ud-BQ-QCY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1716" y="423"/>
+            <point key="canvasLocation" x="1706" y="470"/>
         </scene>
         <!--ABOUT ME-->
         <scene sceneID="SzD-4E-coi">
@@ -41,7 +52,7 @@
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" red="1" green="0.54056791809238125" blue="0.3717578845470132" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
-                                    <segue destination="hbT-o4-8y6" kind="show" id="pMc-FO-NZJ"/>
+                                    <segue destination="hbT-o4-8y6" kind="show" identifier="toDetailView" id="pMc-FO-NZJ"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -57,10 +68,10 @@
             </objects>
             <point key="canvasLocation" x="1010" y="470"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--About me!-->
         <scene sceneID="dxa-fO-SJC">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="PnG-eu-gzv" sceneMemberID="viewController">
+                <navigationController title="About me!" automaticallyAdjustsScrollViewInsets="NO" id="PnG-eu-gzv" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Tc2-ng-xiD">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
