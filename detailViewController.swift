@@ -15,6 +15,6 @@ class detailViewController: UIViewController {
     
     
     override func viewDidLoad() {
-        <#code#>
+        //code
     }
 }

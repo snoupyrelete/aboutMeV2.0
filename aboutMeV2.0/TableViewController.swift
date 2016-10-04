@@ -45,11 +45,11 @@ class TableViewController: UITableViewController {
         if segue.identifier == "toDetailView" {
             if let indexPath = self.tableView.indexPathForSelectedRow {
                 let title = myInfo[indexPath.row]
-                if let destination = segue.destination as? detailViewController
-                {
+                //if let destination = segue.destination as? detailViewController
+                //{
             
-                    destination.title = title
-                }
+                    //destination.title = title
+                //}
             }
             
         }
