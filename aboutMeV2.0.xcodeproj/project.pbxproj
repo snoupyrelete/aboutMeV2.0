@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2D070C7B1DA2AEF8009912BD /* detailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D070C7A1DA2AEF8009912BD /* detailViewController.swift */; };
+		2D070C7B1DA2AEF8009912BD /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D070C7A1DA2AEF8009912BD /* DetailViewController.swift */; };
 		2DEE78201DA2A27D00444A9F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DEE781F1DA2A27D00444A9F /* AppDelegate.swift */; };
 		2DEE78221DA2A27D00444A9F /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DEE78211DA2A27D00444A9F /* TableViewController.swift */; };
 		2DEE78251DA2A27D00444A9F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DEE78231DA2A27D00444A9F /* Main.storyboard */; };
@@ -16,7 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2D070C7A1DA2AEF8009912BD /* detailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = detailViewController.swift; path = ../detailViewController.swift; sourceTree = "<group>"; };
+		2D070C7A1DA2AEF8009912BD /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailViewController.swift; path = ../DetailViewController.swift; sourceTree = "<group>"; };
 		2DEE781C1DA2A27D00444A9F /* aboutMeV2.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = aboutMeV2.0.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DEE781F1DA2A27D00444A9F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2DEE78211DA2A27D00444A9F /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
@@ -58,7 +58,7 @@
 			children = (
 				2DEE781F1DA2A27D00444A9F /* AppDelegate.swift */,
 				2DEE78211DA2A27D00444A9F /* TableViewController.swift */,
-				2D070C7A1DA2AEF8009912BD /* detailViewController.swift */,
+				2D070C7A1DA2AEF8009912BD /* DetailViewController.swift */,
 				2DEE78231DA2A27D00444A9F /* Main.storyboard */,
 				2DEE78261DA2A27D00444A9F /* Assets.xcassets */,
 				2DEE78281DA2A27D00444A9F /* LaunchScreen.storyboard */,
@@ -140,7 +140,7 @@
 			files = (
 				2DEE78221DA2A27D00444A9F /* TableViewController.swift in Sources */,
 				2DEE78201DA2A27D00444A9F /* AppDelegate.swift in Sources */,
-				2D070C7B1DA2AEF8009912BD /* detailViewController.swift in Sources */,
+				2D070C7B1DA2AEF8009912BD /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

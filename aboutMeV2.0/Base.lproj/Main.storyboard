@@ -9,7 +9,7 @@
         <!--Detail View Controller-->
         <scene sceneID="Ov5-Cv-mRN">
             <objects>
-                <viewController id="hbT-o4-8y6" customClass="detailViewController" customModule="aboutMeV2_0" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="hbT-o4-8y6" customClass="DetailViewController" customModule="aboutMeV2_0" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="hyH-Ld-vbg"/>
                         <viewControllerLayoutGuide type="bottom" id="R5K-1H-OZP"/>
@@ -18,8 +18,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hkk-Kg-dDY">
-                                <rect key="frame" x="20" y="289" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dNy-GS-GwC">
+                                <rect key="frame" x="0.0" y="64" width="600" height="35"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="29"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="apC-Ij-cLy">
+                                <rect key="frame" x="0.0" y="125" width="600" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -27,17 +33,22 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="hkk-Kg-dDY" firstAttribute="centerY" secondItem="WxP-Ab-A31" secondAttribute="centerY" id="Ta3-xL-D0I"/>
-                            <constraint firstItem="hkk-Kg-dDY" firstAttribute="leading" secondItem="WxP-Ab-A31" secondAttribute="leadingMargin" id="tyc-Sa-OZN"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="apC-Ij-cLy" secondAttribute="trailing" constant="-20" id="4lT-PB-rGq"/>
+                            <constraint firstItem="apC-Ij-cLy" firstAttribute="leading" secondItem="WxP-Ab-A31" secondAttribute="leadingMargin" constant="-20" id="5se-Dd-Yfa"/>
+                            <constraint firstItem="dNy-GS-GwC" firstAttribute="leading" secondItem="WxP-Ab-A31" secondAttribute="leadingMargin" constant="-20" id="bcP-dI-qxE"/>
+                            <constraint firstItem="dNy-GS-GwC" firstAttribute="top" secondItem="hyH-Ld-vbg" secondAttribute="bottom" id="fQo-9n-WJ3"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="dNy-GS-GwC" secondAttribute="trailing" constant="-20" id="h7v-Z9-jve"/>
+                            <constraint firstItem="apC-Ij-cLy" firstAttribute="top" secondItem="dNy-GS-GwC" secondAttribute="bottom" constant="26" id="oy3-IB-szr"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="descriptionLabel" destination="hkk-Kg-dDY" id="SNE-kI-EV5"/>
+                        <outlet property="detailDescription" destination="apC-Ij-cLy" id="9eQ-3z-Z1y"/>
+                        <outlet property="detailTitle" destination="dNy-GS-GwC" id="iS4-JQ-687"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Ud-BQ-QCY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1706" y="470"/>
+            <point key="canvasLocation" x="1703" y="450"/>
         </scene>
         <!--ABOUT ME-->
         <scene sceneID="SzD-4E-coi">
@@ -56,9 +67,6 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" red="1" green="0.54056791809238125" blue="0.3717578845470132" alpha="1" colorSpace="calibratedRGB"/>
-                                <connections>
-                                    <segue destination="hbT-o4-8y6" kind="show" identifier="toDetailView" id="pMc-FO-NZJ"/>
-                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <sections/>
@@ -68,10 +76,13 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="kif-hf-ixr"/>
+                    <connections>
+                        <segue destination="hbT-o4-8y6" kind="show" identifier="toDetailView" id="9tF-NQ-CUu"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O1S-LV-HjY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1010" y="470"/>
+            <point key="canvasLocation" x="1034" y="450"/>
         </scene>
         <!--About me!-->
         <scene sceneID="dxa-fO-SJC">
