@@ -6,7 +6,7 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Detail View Controller-->
+        <!--About me-->
         <scene sceneID="Ov5-Cv-mRN">
             <objects>
                 <viewController id="hbT-o4-8y6" customClass="DetailViewController" customModule="aboutMeV2_0" customModuleProvider="target" sceneMemberID="viewController">
@@ -18,32 +18,50 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dNy-GS-GwC">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dNy-GS-GwC">
                                 <rect key="frame" x="0.0" y="64" width="600" height="35"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="29"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
+                                <color key="textColor" red="0.96862751245498657" green="0.9490196704864502" blue="0.21568629145622253" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="highlightedColor" red="1" green="0.70866607079999999" blue="0.16220144610000001" alpha="1" colorSpace="calibratedRGB"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="apC-Ij-cLy">
-                                <rect key="frame" x="40" y="125" width="560" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="40" y="125" width="520" height="184"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
+                                <color key="textColor" red="0.15294118225574493" green="0.84705889225006104" blue="0.97647064924240112" alpha="1" colorSpace="deviceRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eH8-MP-Q1h">
+                                <rect key="frame" x="0.0" y="314" width="600" height="286"/>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="0.54056791810000004" blue="0.37175788450000002" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="apC-Ij-cLy" secondAttribute="trailing" constant="-20" id="4lT-PB-rGq"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="apC-Ij-cLy" secondAttribute="trailing" constant="20" id="4lT-PB-rGq"/>
                             <constraint firstItem="apC-Ij-cLy" firstAttribute="leading" secondItem="WxP-Ab-A31" secondAttribute="leadingMargin" constant="20" id="5se-Dd-Yfa"/>
+                            <constraint firstItem="eH8-MP-Q1h" firstAttribute="top" secondItem="apC-Ij-cLy" secondAttribute="bottom" constant="5" id="961-mU-Nhn"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="eH8-MP-Q1h" secondAttribute="trailing" constant="-20" id="Zde-Wg-Rd1"/>
                             <constraint firstItem="dNy-GS-GwC" firstAttribute="leading" secondItem="WxP-Ab-A31" secondAttribute="leadingMargin" constant="-20" id="bcP-dI-qxE"/>
                             <constraint firstItem="dNy-GS-GwC" firstAttribute="top" secondItem="hyH-Ld-vbg" secondAttribute="bottom" id="fQo-9n-WJ3"/>
                             <constraint firstAttribute="trailingMargin" secondItem="dNy-GS-GwC" secondAttribute="trailing" constant="-20" id="h7v-Z9-jve"/>
+                            <constraint firstItem="eH8-MP-Q1h" firstAttribute="top" secondItem="hyH-Ld-vbg" secondAttribute="bottom" constant="250" id="loe-qV-XzO"/>
+                            <constraint firstItem="R5K-1H-OZP" firstAttribute="top" secondItem="eH8-MP-Q1h" secondAttribute="bottom" id="nCw-aW-5dN"/>
+                            <constraint firstItem="eH8-MP-Q1h" firstAttribute="leading" secondItem="WxP-Ab-A31" secondAttribute="leadingMargin" constant="-20" id="nUy-jm-ZG4"/>
                             <constraint firstItem="apC-Ij-cLy" firstAttribute="top" secondItem="dNy-GS-GwC" secondAttribute="bottom" constant="26" id="oy3-IB-szr"/>
                         </constraints>
                     </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="About me" id="yvp-qJ-Foe">
+                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="PKO-g8-HQe">
+                            <connections>
+                                <action selector="shareButtonPressed:" destination="hbT-o4-8y6" id="R8d-3A-f1w"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="detailDescription" destination="apC-Ij-cLy" id="9eQ-3z-Z1y"/>
                         <outlet property="detailTitle" destination="dNy-GS-GwC" id="iS4-JQ-687"/>
+                        <outlet property="imageView" destination="eH8-MP-Q1h" id="zlP-Is-byL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Ud-BQ-QCY" userLabel="First Responder" sceneMemberID="firstResponder"/>
