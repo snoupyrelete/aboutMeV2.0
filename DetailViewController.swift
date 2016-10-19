@@ -25,7 +25,7 @@ class DetailViewController: UIViewController
             detailDescription.text = "I love to play Football, I've played it every year since I was eight. I love video games, I play lots of different games, but I love strategy games and first person shooters. I love to be outdoors. I like hiking, mountain biking and camping."
             imageView.image = UIImage(named: "mmstance")
         } else if nameOfCategory == "Facts about me" {
-            detailDescription.text = "My name is Dylan Robson, I am 18 years old and I'm a senior at Corner Canyon High School. My favorite color is Red. I have 2 sisters, one is 14 at Draper Park and one is 20, going to the U. I have 2 sisters, one is 13 at Draper Park and one is 20, going to the U."
+            detailDescription.text = "My name is Dylan Robson, I am 18 years old and I'm a senior at Corner Canyon High School. My favorite color is Red. I have 2 sisters, one is 14 at Draper Park and one is 20, going to the U."
             imageView.image = UIImage(named: "konahammock")
         } else if nameOfCategory == "Why I think programming is important" {
             detailDescription.text = "I think programming is important because it allows us to solve problems in our everyday lives with both simple and complex programs. "
